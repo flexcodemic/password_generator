@@ -96,33 +96,40 @@ symbolBtn.addEventListener("click", () => {
 // Activate the lowercase character
 function addLowerCase() {
     if(includeLowerCase) {
-        
+        lowerBtn.innerHTML = "Remove [abcdefgh]";
         return lowerBtn.classList.add("active");
     } else {
+        lowerBtn.innerHTML = "Add [abcdefgh]";
         return lowerBtn.classList.remove("active");
     }
 }
 // Activate the uppercase character
 function addUpperCase() {
     if(includeUpperCase) {
+        upperBtn.innerHTML = "Remove [ABCDEFGH]";
         return upperBtn.classList.add("active");
     } else {
+        upperBtn.innerHTML = "Add [ABCDEFGH]";
         return upperBtn.classList.remove("active");
     }
 }
 // Activate the number character
 function addNumber() {
     if(includeNumber) {
+        numberBtn.innerHTML = "Remove [01234567]";
         return numberBtn.classList.add("active");
     } else {
+        numberBtn.innerHTML = "Add [01234567]";
         return numberBtn.classList.remove("active");
     }
 }
 // Activate the symbols character
 function addSymbol() {
     if(includeSymbol) {
+        symbolBtn.innerHTML = "Remove [~>!:$@%&]"
         return symbolBtn.classList.add("active");
     } else {
+        symbolBtn.innerHTML = "Add [~>!:$@%&]"
         return symbolBtn.classList.remove("active");
     }
 }
