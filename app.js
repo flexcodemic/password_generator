@@ -42,8 +42,8 @@ function passwordGenerator(
 
     if (length <= 0) {
         return "❌ Password length must be at least 1";
-    } else if (length > 14) {
-        return "❌ Password length must NOT be greater than 14";
+    } else if (length > 25) {
+        return "❌ Password length must NOT be greater than 25";
     }
 
     if (allowedChars.length === 0) {
