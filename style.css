@@ -70,6 +70,7 @@
 }
 
 .btn-box button {
+    width: 160px;
     border: none;
     padding: 8px 15px;
     cursor: pointer;
