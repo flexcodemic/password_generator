@@ -40,8 +40,8 @@ function passwordGenerator(
         return "Enter a valid password length";
     }
 
-    if (length <= 0) {
-        return "❌ Password length must be at least 1";
+    if (length < 5) {
+        return "❌ Password length must be at least 5";
     } else if (length > 25) {
         return "❌ Password length must NOT be greater than 25";
     }
